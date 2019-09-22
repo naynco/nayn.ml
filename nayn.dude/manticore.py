@@ -82,4 +82,4 @@ class CorpusSimilarity:
             self.model()
 
 news = "Katif kentinde nüfusun çoğunluğunu Şii'ler oluşturuyor. Daha önce bölgede Suudi güvenlik güçlerini hedef alan saldırdı"
-print(CorpusSimilarty().load_and_predict(news))
+print(CorpusSimilarity().load_and_predict(news))
