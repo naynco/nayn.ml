@@ -5,10 +5,17 @@ import string
 import gensim
 from nltk.tokenize import word_tokenize
 import os
+import nltk
+
 
 class CorpusSimilarity:
     def __init__(self):
         pass
+
+    def download_nltk_models(self):
+        download_list = ["stopwords", "punkt"]
+        for download in download_list:
+            nltk.download(download)
 
     def load_data(self):
         df = pd.read_csv("https://raw.githubusercontent.com/naynco/nayn.data/master/nayn.co-2016.csv")
